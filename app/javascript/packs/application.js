@@ -18,12 +18,12 @@ import 'bootstrap';
 
 
 function initMap() {
-  // The location of Uluru
+  // The location of KC
   var kc = {lat: 39.0997, lng: -94.5786};
-  // The map, centered at Uluru
+  // The map, centered at KC
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 10, center: kc});
-  // The marker, positioned at Uluru
+  // The marker, positioned at KC
   var marker = new google.maps.Marker({position: kc, map: map});
 }
 

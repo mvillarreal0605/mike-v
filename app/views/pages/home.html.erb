@@ -1,12 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="video-wrapper">
+  <%= video_tag "type.mp4", mute: true, autoplay: :autoplay, loop: true, playsinline: true, preload: :auto, class: "banner_video", id: 'vid' %>
+  <h1>Cheesy, inspiring coding caption here</h1>
+</div>
+<div class="container">
+  <h3>Hello! I am Michael Villarreal, and I am a Full-Stack, Ruby on Rails Web Developer...</h3>
 
-<h3>Currently living in:</h3>
-<!--The div element for the map -->
-<div id="map"></div>
-<!-- Replace the value of the key parameter with your own API key. -->
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSSwTYpOSbRe2f6_AGYGv3r6VCf52qGuw&callback=initMap">
-</script>
+  <p>I can help you bring your product/brand/business/ideas to life on the web! I specialize in progressive web apps, and UX/UI design. I love to work on projects that are forward thinking, and focus on providing true value in the world.</p>
 
-
+  <h3>Currently located in</h3>
+  <!--The div element for the map -->
+  <div id="map"></div>
+</div>
