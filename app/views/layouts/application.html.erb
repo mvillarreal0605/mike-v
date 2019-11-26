@@ -11,7 +11,8 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar-example" >
+    <%= render "shared/navbar" %>
     <%= yield %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js" %>

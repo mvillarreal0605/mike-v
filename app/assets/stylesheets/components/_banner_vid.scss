@@ -12,4 +12,16 @@
 .video-wrapper {
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-holder {
+	height: 100%;
+	width: 100%;
+	margin-left: 10%;
+	margin-bottom: 15%;
+	display: flex;
+	align-items: flex-end;
+	color: white;
 }

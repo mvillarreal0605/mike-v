@@ -1,0 +1,16 @@
+.intro {
+	display: flex;
+	flex-direction: column;
+	h2 {
+		width: 500px;
+	}
+	h4 {
+		width: 400px;
+	}
+}
+
+.intro-message {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}

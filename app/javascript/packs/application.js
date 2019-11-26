@@ -1,4 +1,7 @@
 import 'bootstrap';
+import { initUpdateNavbarOnScroll } from "../components/navbar";
+import { loadDynamicBannerText } from "../components/banner";
+import { navLinks } from "../components/navLinks";
 /* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
@@ -27,7 +30,8 @@ function initMap() {
   var marker = new google.maps.Marker({position: kc, map: map});
 }
 
+navLinks();
 initMap();
+initUpdateNavbarOnScroll();
+loadDynamicBannerText();
 
-
-console.log('Hello World from Webpacker')

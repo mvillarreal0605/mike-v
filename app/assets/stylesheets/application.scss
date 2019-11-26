@@ -11,3 +11,21 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  position: relative;
+}
+
+.container {
+	width: 700px;
+}
+
+.holder {
+	margin: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New inquiry for business!</h1>
+    <h4><%= @inquiry.name %> has filled out the form for a new project.</h4>
+    <h4>Details for the new project include:</h4>
+    <p>
+      <%= @inquiry.description %>
+    </p>
+    <h4>
+      You may contact them back at: <%= @inquiry.contact %>.
+    </h4>
+  </body>
+</html>

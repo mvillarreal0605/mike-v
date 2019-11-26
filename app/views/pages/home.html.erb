@@ -1,13 +1,95 @@
 <div class="video-wrapper">
   <%= video_tag "type.mp4", mute: true, autoplay: :autoplay, loop: true, playsinline: true, preload: :auto, class: "banner_video", id: 'vid' %>
-  <h1>Cheesy, inspiring coding caption here</h1>
+  <div class="type-holder">
+  	<h1>
+      <span id="banner-typed-text"></span>
+    </h1>
+  </div>
 </div>
-<div class="container">
-  <h3>Hello! I am Michael Villarreal, and I am a Full-Stack, Ruby on Rails Web Developer...</h3>
 
-  <p>I can help you bring your product/brand/business/ideas to life on the web! I specialize in progressive web apps, and UX/UI design. I love to work on projects that are forward thinking, and focus on providing true value in the world.</p>
 
-  <h3>Currently located in</h3>
-  <!--The div element for the map -->
-  <div id="map"></div>
+<div id="about-me" tabindex="0">
+  <h2>About me <i class="fas fa-fingerprint"></i></h2>
+  <div class="container">
+    <h2>Hello! I am Michael Villarreal, and I am a Full-Stack, Ruby on Rails Web Developer...</h2>
+    <div class="intro-message">
+      <%= image_tag "lipic", alt: "profile picture", class: "avatar-large" %>
+      <h4>I can help you bring your product/brand/business/ideas to life on the web! I specialize in progressive web apps, and UX/UI design. I love to work on projects that are forward thinking, and focus on providing true value to the world.</h4>
+    </div>
+
+    <div>
+      <h3>Currently located in <i class="fas fa-map-marked-alt"></i></h3>
+      <!--The div element for the map -->
+      <div class="holder">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="portfolio" tabindex="0">
+  <h2>Work <i class="fas fa-briefcase"></i></h2>
+  <div class="container">
+    <h3>Proficiencies <i class="fa fa-code"></i></h3>
+    <ul class="proficiencies">
+      <div class="list-wrap">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript(ES6)</li>
+        <li>Ruby</li>
+        <li>Ruby on Rails</li>
+        <li>SQL</li>
+        <li>SQLite3</li>
+        <li>PostgreSQL</li>
+        <li>JSON</li>
+        <li>Active Record</li>
+        <li>Bootstrap</li>
+        <li>AJAX</li>
+        <li>JQuery</li>
+        <li>API's</li>
+      </div>
+    </ul>
+  
+    <h3>Portfolio</h3>
+    <div class="portfolio-holder">
+      <div class="hovereffect">
+        <%= image_tag "bell-hour", alt: "school image", class: "img-responsive" %>
+        <div class="overlay">
+          <h2>Bell Hour</h2>
+          <p><a href="#">Link coming soon</a></p>
+        </div>
+      </div>
+      <div class="hovereffect">
+        <%= image_tag "popps", alt: "baseball image", class: "img-responsive" %>
+        <div class="overlay">
+          <h2>POPPS API</h2>
+          <p><a href="#">Link coming soon</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="inquiry" tabindex="0">
+  <h2>Contact <i class="fas fa-envelope-open-text"></i></h2>
+  <div class="container">
+    <h3>Let's do business <i class="far fa-handshake"></i></h3>
+    <div class="holder">
+      <%= simple_form_for @inquiry do |f| %>
+        <h4><%= f.input :name, required: true, placeholder: 'John Doe', class: "form-control is-invalid" %></h4>
+        <div class="invalid-feedback">You don't have a name?!</div>
+        <h4><%= f.input :contact, required: true, placeholder: 'Phone number or email' %></h4>
+        <h4><%= f.input :description, required: true, placeholder: 'Leave a short description of the project you have.' %></h4>
+        <h4><%= f.submit %></h4>
+      <% end %>
+    </div>
+
+    <div class="footer">
+      <ul class="social-icons">
+        <h1><li><a href="https://github.com/mvillarreal0605" class="social-icon" target="_blank"><i class="fab fa-github"></i></a></li></h1>
+        <h1><li><a href="https://www.linkedin.com/in/michael-villarreal-8ab742110/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a></li></h1>
+        <h1><li><a href="https://www.instagram.com/_mvill_/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a></li></h1>
+      </ul>
+    </div>
+  </div>
 </div>

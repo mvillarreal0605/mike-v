@@ -1,0 +1,17 @@
+.proficiencies {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.list-wrap {
+	width: 600px;
+	display: flex;
+	flex-wrap: wrap;
+  li {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+}

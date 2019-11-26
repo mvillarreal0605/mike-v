@@ -1,0 +1,17 @@
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  a {
+  	color: rgb(170, 170, 170);
+  	&:hover{
+  		color: rgb(150,150,150);
+  	}
+  } 
+}
