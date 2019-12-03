@@ -9,9 +9,9 @@
   flex-direction: row;
   justify-content: space-between;
   a {
-  	color: rgb(170, 170, 170);
+  	color: $blue;
   	&:hover{
-  		color: rgb(150,150,150);
+  		color: $neon-blue;
   	}
   } 
 }

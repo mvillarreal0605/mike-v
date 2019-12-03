@@ -1,5 +1,45 @@
 // Specific CSS for your home-page
+body {
+	background-color: $white;
+	color: $grey;
+	font-style: $body-font;
+}
 
+.big-text {
+	font-size: 56px;
+}
 
+.break {
+	height: 56px;
+}
 
+.little-break {
+	height: 32px;
+}
 
+.extra-little-break {
+	height: 16px;
+}
+
+.case {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.map-holder {
+	width: 500px;
+}
+
+.footer {
+	margin: 24px 0px;
+}
+
+#work {
+	background-color: $dark-purple;
+	color: $white;
+}
+
+h1, h2, h3 {
+	font-style: $headers-font;
+}

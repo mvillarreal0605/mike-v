@@ -2,6 +2,7 @@ import 'bootstrap';
 import { initUpdateNavbarOnScroll } from "../components/navbar";
 import { loadDynamicBannerText } from "../components/banner";
 import { navLinks } from "../components/navLinks";
+import { initMap } from "./map";
 /* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
@@ -19,16 +20,6 @@ import { navLinks } from "../components/navLinks";
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-
-function initMap() {
-  // The location of KC
-  var kc = {lat: 39.0997, lng: -94.5786};
-  // The map, centered at KC
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 10, center: kc});
-  // The marker, positioned at KC
-  var marker = new google.maps.Marker({position: kc, map: map});
-}
 
 navLinks();
 initMap();
