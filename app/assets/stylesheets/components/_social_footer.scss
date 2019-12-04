@@ -1,13 +1,13 @@
-.footer{
-  display: flex;
-  justify-content: center;
-}
+// .footer{
+//   display: flex;
+//   justify-content: center;
+// }
 
 .social-icons {
-  width: 400px;
+  padding: 16px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   a {
   	color: $blue;
   	&:hover{

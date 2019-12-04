@@ -1,4 +1,4 @@
-.navbar-lewagon {
+.navbar-custom {
   justify-content: space-between;
   background: transparent;
   transition: 0.75s background-color ease;
@@ -9,11 +9,11 @@
 	box-shadow: 0 5px 15px rgba(0,0,0,.07);
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-custom .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-custom .navbar-brand img {
   width: 40px;
 }
 

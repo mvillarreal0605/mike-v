@@ -1,6 +1,6 @@
 import 'bootstrap';
-import { initUpdateNavbarOnScroll } from "../components/navbar";
-import { loadDynamicBannerText } from "../components/banner";
+import { updateNav } from "../components/navbar";
+import { bannerText } from "../components/banner";
 import { navLinks } from "../components/navLinks";
 import { initMap } from "./map";
 /* eslint no-console:0 */
@@ -23,6 +23,6 @@ import { initMap } from "./map";
 
 navLinks();
 initMap();
-initUpdateNavbarOnScroll();
-loadDynamicBannerText();
+updateNav();
+bannerText();
 

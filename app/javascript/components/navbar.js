@@ -1,5 +1,5 @@
-const initUpdateNavbarOnScroll = () => {
-  const navbar = document.querySelector('.navbar-lewagon');
+const updateNav = () => {
+  const navbar = document.querySelector('.navbar-custom');
   if (navbar) {
     window.addEventListener('scroll', () => {
       if (window.scrollY >= window.innerHeight) {
@@ -11,4 +11,4 @@ const initUpdateNavbarOnScroll = () => {
   }
 }
 
-export { initUpdateNavbarOnScroll };
+export { updateNav };

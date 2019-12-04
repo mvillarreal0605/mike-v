@@ -1,29 +1,29 @@
 <div class="video-wrapper">
-  <%= video_tag "type.mp4", mute: true, autoplay: :autoplay, loop: true, playsinline: true, preload: :auto, class: "banner_video", id: 'vid' %>
+  <%= video_tag "type.mp4", muted: true, autoplay: :autoplay, loop: true, playsinline: true, preload: :auto, class: "banner_video", id: 'vid' %>
+  <div class="backdrop">
   <div class="type-holder">
-  	<h1>
-      <span id="banner-typed-text" class="big-text"></span>
+  	<h1 class="jumbo-text">
+      The best way<br/>to tell the future...<br/>is to create it.<br/>Let's do that.<br/>Together.
     </h1>
+  </div>
   </div>
 </div>
 
 
 <div id="about-me" tabindex="0">
   <div class="break"></div>
-  <!-- <h2>About me <i class="fas fa-fingerprint"></i></h2> -->
-  <div class="container">
+  <div class="container col-xl-7 col-lg-8">
     <h1 class="big-text">Hello! I am Michael Villarreal, and I am a Full-Stack, Ruby on Rails Developer...</h1>
     <div class="little-break"></div>
     <div class="intro-message">
       <%= image_tag "lipic", alt: "profile picture", class: "avatar-large" %>
-      <h4>I can help you bring your product/brand/business/ideas to life on the web! I specialize in progressive web apps, and UX/UI design. I love to work on projects that are forward thinking, and focus on providing true value to the world.</h4>
+      <h4 class="col-xl-7 col-lg-7 col-md-7">I can help you bring your product/brand/business/ideas to life on the web! I specialize in progressive web apps, and UX/UI design. I love to work on projects that are forward thinking, and focus on providing true value to the world.</h4>
     </div>
 
     <div class="little-break"></div>
 
     <div>
-      <h3>Currently Located In <i class="fas fa-map-marked-alt"></i></h3>
-      <!--The div element for the map -->
+      <h3> Currently Located In <i class="fas fa-map-marked-alt"></i></h3>
       <div class="little-break"></div>
       <div class="case">
         <div class="map-holder">
@@ -37,40 +37,37 @@
 
 <div id="work" tabindex="0">
   <div class="break"></div>
-  <div class="container">
+  <div class="container col-xl-7 col-lg-8">
     <h3>Proficiencies <i class="fa fa-code"></i></h3>
     <ul class="case">
       <div class="list-wrap">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript(ES6)</li>
-        <li>Ruby</li>
-        <li>Ruby on Rails</li>
-        <li>SQL</li>
-        <li>SQLite3</li>
-        <li>PostgreSQL</li>
-        <li>JSON</li>
-        <li>Active Record</li>
-        <li>Bootstrap</li>
-        <li>AJAX</li>
-        <li>JQuery</li>
-        <li>API's</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">HTML5</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">CSS3</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">JavaScript(ES6)</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">Ruby</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">Ruby on Rails</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">SQL</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">SQLite3</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">PostgreSQL</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">JSON</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">Active Record</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">Bootstrap</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">AJAX</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">JQuery</li>
+        <li class="col-xl-4 col-lg-4 col-md-4 col-sm-6">API's</li>
       </div>
     </ul>
+    <div class="little-break"></div>
 
-    <div class="little-break"></div>
-  
     <h3>Portfolio <i class="fas fa-folder-open"></i></i></h3>
-    <div class="little-break"></div>
     <%= render 'shared/portfolio-cards' %>
   </div>
   <div class="break"></div>
 </div>
 
 <div id="contact" tabindex="0">
-  <!-- <h2>Contact <i class="fas fa-envelope-open-text"></i></h2> -->
   <div class="break"></div>
-  <div class="container">
+  <div class="container col-xl-7 col-lg-8">
     <h3>Let's Work Together <i class="far fa-handshake"></i></h3>
     <div class="extra-little-break"></div>
     <div class="holder form">
@@ -87,12 +84,12 @@
 
     <div class="break"></div>
 
-    <div class="footer">
+    <!-- <div class="footer"> -->
       <ul class="social-icons">
-        <h1 class="big-text"><li><a href="https://github.com/mvillarreal0605" class="social-icon" target="_blank"><i class="fab fa-github"></i></a></li></h1>
-        <h1 class="big-text"><li><a href="https://www.linkedin.com/in/michael-villarreal-8ab742110/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a></li></h1>
-        <h1 class="big-text"><li><a href="https://www.instagram.com/_mvill_/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a></li></h1>
+        <h1><li><a href="https://github.com/mvillarreal0605" class="social-icon" target="_blank"><i class="fab fa-github"></i></a></li></h1>
+        <h1><li><a href="https://www.linkedin.com/in/michael-villarreal-8ab742110/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a></li></h1>
+        <h1><li><a href="https://www.instagram.com/_mvill_/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a></li></h1>
       </ul>
-    </div>
+    <!-- </div> -->
   </div>
 </div>
