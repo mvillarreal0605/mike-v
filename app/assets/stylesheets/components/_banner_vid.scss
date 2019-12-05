@@ -23,20 +23,20 @@
 }
 
 .type-holder {
-	margin-left: 5%;
 	margin-top: 10%;
+	margin-left: 5%;
 	display: flex;
-	align-items: flex-begin;
+	align-items: center;
 	color: $white;
 }
 
 .jumbo-text {
-	font-size: 72px;
+	font-size: 96px;
 }
 
 @media only screen and (max-width: 480px) {
   .type-holder {
-  	margin-top: 20%;
+  	margin: 40% 5% 0%;
   }
   .jumbo-text {
   	font-size: 56px;

@@ -15,6 +15,19 @@
   align-items: center;
   flex-wrap: wrap;
   h4 {
+  	width: 440px;
   	margin: 0px;
   }
+}
+
+.intro-item {
+	margin: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+	.intro-message {
+		h4 {
+          width: 250px;
+		}
+	}
 }

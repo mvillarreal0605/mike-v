@@ -1,8 +1,8 @@
 class InquiryMailer < ApplicationMailer
-  # default from: 'michael@bellhour.com'
+  default from: 'notifications@mikevkc.dev'
 
   def inquiry_email(inquiry)
   	@inquiry = inquiry
-  	mail(to: 'hello@mikevkc.dev', subject: 'New Inquiry')
+  	mail(to: 'me@mikevkc.dev', subject: 'New Inquiry')
   end
 end

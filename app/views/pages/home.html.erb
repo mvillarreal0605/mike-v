@@ -3,7 +3,7 @@
   <div class="backdrop">
   <div class="type-holder">
   	<h1 class="jumbo-text">
-      The best way<br/>to tell the future...<br/>is to create it.<br/>Let's do that.<br/>Together.
+      The best way to tell the future...<br/>is to create it.
     </h1>
   </div>
   </div>
@@ -12,14 +12,15 @@
 
 <div id="about-me" tabindex="0">
   <div class="break"></div>
-  <div class="container col-xl-7 col-lg-8">
+  <div class="container col-xl-8 col-lg-10">
     <h1 class="big-text">Hello! I am Michael Villarreal, and I am a Full-Stack, Ruby on Rails Developer...</h1>
     <div class="little-break"></div>
+    <div class="case">
     <div class="intro-message">
-      <%= image_tag "lipic", alt: "profile picture", class: "avatar-large" %>
-      <h4 class="col-xl-7 col-lg-7 col-md-7">I can help you bring your product/brand/business/ideas to life on the web! I specialize in progressive web apps, and UX/UI design. I love to work on projects that are forward thinking, and focus on providing true value to the world.</h4>
+      <%= image_tag "lipic", alt: "profile picture", class: "avatar-large intro-item" %>
+      <h4 class="intro-item">I can help you bring your <span id="product-text"></span><br/>to life on the web! I specialize in progressive web apps, and UX/UI design. I love to work on projects that are forward thinking, and focus on providing a true value to the world.</h4>
     </div>
-
+    </div>
     <div class="little-break"></div>
 
     <div>
@@ -37,7 +38,7 @@
 
 <div id="work" tabindex="0">
   <div class="break"></div>
-  <div class="container col-xl-7 col-lg-8">
+  <div class="container col-xl-7 col-lg-10">
     <h3>Proficiencies <i class="fa fa-code"></i></h3>
     <ul class="case">
       <div class="list-wrap">
@@ -67,18 +68,22 @@
 
 <div id="contact" tabindex="0">
   <div class="break"></div>
-  <div class="container col-xl-7 col-lg-8">
+  <div class="container col-xl-7 col-lg-10">
     <h3>Let's Work Together <i class="far fa-handshake"></i></h3>
     <div class="extra-little-break"></div>
     <div class="holder form">
       <%= simple_form_for @inquiry do |f| %>
         <h4><%= f.input :name, required: true, placeholder: 'John Doe', class: "form-control is-invalid" %></h4>
+        <div id="name-error"></div>
         <div class="little-break"></div>
-        <h4><%= f.input :contact, required: true, placeholder: 'Phone number or email' %></h4>
+        <h4><%= f.input :email, required: true, placeholder: 'your.email@example.com' %></h4>
+        <div id="email-error"></div>
         <div class="little-break"></div>
-        <h4><%= f.input :description, required: true, placeholder: 'Leave a short description of the project or work you have.' %></h4>
+        <h4><%= f.input :phone_number, placeholder: '816-555-5555' %></h4>
         <div class="little-break"></div>
-        <%= f.button :submit, "Create Inquiry", class: "btn-flat" %>
+        <h4><%= f.input :message, placeholder: 'Talk about any project that you have, or just say hi!' %></h4>
+        <div class="little-break"></div>
+        <%= f.button :submit, "Submit Inquiry", class: "btn-flat", id: 'submit-inquiry' %>
       <% end %>
     </div>
 

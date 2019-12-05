@@ -1,9 +1,13 @@
+
 New inquiry for business!
+<%= @inquiry.name %> has filled out the form on your website.
+<% if @inquiry.message %>
+  The following message was included:
+    <%= @inquiry.message %>
+<% end %>
 
-  <%= @inquiry.name %> has filled out the form for a new project.
+You may contact them back at: <%= @inquiry.email %>.
 
-  Details for the new project include:
-  
-      <%= @inquiry.description %>
-
-  You may contact them back at: <%= @inquiry.contact %>.
+<% if @inquiry.phone_number %>
+Or: <%= @inquiry.phone_number %>
+<% end %>

@@ -1,7 +1,8 @@
 import 'bootstrap';
 import { updateNav } from "../components/navbar";
-import { bannerText } from "../components/banner";
+import { fancyText } from "../components/fancyText";
 import { navLinks } from "../components/navLinks";
+import { inquiryBlankErrors } from "../components/inquiryBlankErrors";
 import { initMap } from "./map";
 /* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
@@ -21,8 +22,9 @@ import { initMap } from "./map";
 // const imagePath = (name) => images(name, true)
 
 
+inquiryBlankErrors();
 navLinks();
 initMap();
 updateNav();
-bannerText();
+fancyText();
 

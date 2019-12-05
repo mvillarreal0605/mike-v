@@ -5,6 +5,11 @@ body {
 	font-style: $body-font;
 }
 
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
 .big-text {
 	font-size: 56px;
 }
@@ -22,7 +27,6 @@ body {
 }
 
 .case {
-	width: 100%;
 	display: flex;
 	justify-content: center;
 }
