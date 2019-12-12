@@ -11,6 +11,9 @@ const inquiryBlankErrors = () => {
     if (emailField.value === "") {
       event.preventDefault();
       document.querySelector('#email-error').innerText = "Email cannot be blank.";
+    } else if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value) === false) {
+      event.preventDefault();
+      document.querySelector('#email-error').innerText = "Must use a valid email.";
     }
   })
 }
