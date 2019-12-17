@@ -2,12 +2,14 @@
 
 one:
   name: MyString
-  contact: MyString
-  body: MyText
+  email: MyString
+  phone_number: MyString
+  message: MyText
   duedate: 2019-11-16 18:54:43
 
 two:
   name: MyString
-  contact: MyString
-  body: MyText
+  email: MyString
+  phone_number: MyString
+  message: MyText
   duedate: 2019-11-16 18:54:43
